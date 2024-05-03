@@ -18,7 +18,7 @@ Per utilizzarla, scarica il codice usando questo [link di download](https://gith
 
 All'interno troverai:
 
-- Il file `script_sql.sql` da eseguire tramite PHPMyAdmin, contiene lo script per la creazione del database con le due semplici tabelle già discusse e i relativi indici.
+- Il file `script_sql.sql` da eseguire tramite PHPMyAdmin. Contiene lo script per la creazione del database con le due semplici tabelle già discusse e i relativi indici.
 - La cartella `myApp` contenente il codice PHP. Questa cartella va posta sotto la directory `xampp\htdocs\` se usi XAMPP, altrimenti seguendo le specifiche del tuo web server.
 
 Dopo di che, avvia il web server e usa l'applicazione. Di default, verrà caricata la pagina `index.php` che contiene la schermata di login.
