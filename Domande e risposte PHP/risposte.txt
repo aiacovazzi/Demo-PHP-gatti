@@ -1,0 +1,112 @@
+Domande di PHP e JS e HTML
+
+PHP:
+//echo di un codice HTML
+echo '<br>'.'<p>ciao</p>';
+
+//dirottare verso un'altra pagina
+header('Location: page.php');
+
+// Connessione al DB connection.php
+$conn = new mysqli($servername, $username, $password, $dbname);
+//L'oggetto $conn protrà essere usato per effettuare le query e altre operazioni.
+
+//verificare errori d connessione
+$conn -> connect_error
+
+//comunicare un eventuale errore
+die('Errore: '.$conn -> connect_error)
+
+//includere un modulo esterno
+require __DIR__.'/modulo.php';
+
+//eseguire una query
+$res = $conn->query($query);
+//in caso di delete/update restituirà un booleano utilizzable per stabilire la  riuscita dell'operazione
+
+//verificare l'esistenza di righe
+$res-> num_rows
+
+
+//recuperare  valori da una riga ed utilizzarli
+$row = $res -> fetch_assoc();
+$var = $row['campo1'];
+
+//chiudere la connessione
+$conn -> close();
+
+//inizializzare una sessione HTTP
+session_start();
+
+//aggiungere un nuovo id sessione
+session_regenerate_id()
+$_SESSION['sessionId'] = session_id();
+
+//aggiungere altri dati in sessione
+$_SESSION['x'] = $x
+
+
+//verificare se è stato già assegnato un id sessione
+if(isset($_SESSION['sessionId'] )){
+}
+
+
+//recuperare altre info dalla sessione
+$x = $_SESSION['x'];
+
+//distruggere la sessione
+session_destroy();
+//per logout
+
+//recuperare info mandate come dati POST si può usare anche $_POST
+$a = $_REQUEST['a'];
+$a = $_POST['a'];
+
+//creazione di un hash di una password
+$password_hash = password_hash($password,PASSWORD_BCRYPT);
+
+
+//confronto password e relativo hash
+password_verify($password, $hash_took_from_db);
+
+
+//creare un link con un parametro hardcoded
+"<a href = 'page.php?id=".$val."'>"
+//va recuperato nell'array associativo $_GET o $_REQUEST
+
+
+JS:
+//valorizzare dinamicamente un form
+document.getElementById('idQualcosa') = 'ciao';
+
+
+//verificare valori campi
+<script>
+    function validateForm() {
+  let p1 = document.getElementById("password").value;
+  let p2 = document.getElementById("password2").value;
+  if (p1!=p2) {
+    alert("Attenzione! Le due password devono coincidere.");
+    return false;
+  }
+} 
+</script>
+
+
+HTML:
+//form con azione php, check js, testi e password
+<form name='inserisci' action = 'esegui.php' method = 'post' onsubmit=(return func_js())>
+
+<p>
+	<label for="username">Username:</label>
+	<input type="text" name="username" id="username" required>
+</p>
+
+<p>
+	<label for="password">Password:</label>
+	<input type="password" name="password" id="username" password>
+</p>
+</form>
+
+//hidden input
+<input type="hidden" name="idGatto" id="idGatto" value = '.$idGatto.'>

@@ -1,0 +1,77 @@
+Domande di PHP e JS e HTML
+
+PHP:
+//echo di un codice HTML
+
+
+//dirottare verso un'altra pagina
+
+
+// Connessione al DB connection.php
+
+
+//verificare errori di connessione
+
+
+//comunicare un eventuale errore
+
+
+//includere un modulo esterno
+
+
+//eseguire una query
+
+
+//verificare l'esistenza di righe
+
+
+//recuperare  valori da una riga ed utilizzarli
+
+
+//chiudere la connessione
+
+
+//inizializzare una sessione HTTP
+
+
+//aggiungere un nuovo id sessione
+
+
+//aggiungere altri dati in sessione
+
+
+
+//verificare se è stato già assegnato un id sessione
+
+
+//recuperare altre info dalla sessione
+
+
+//distruggere la sessione
+
+
+//recuperare info mandate come dati POST si può usare anche $_POST
+
+
+//creazione di un hash di una password
+
+//confronto password e relativo hash
+
+
+//creare un link con un parametro hardcoded
+
+
+
+JS:
+//valorizzare dinamicamente un form
+
+
+
+//verificare valori campi
+
+
+HTML:
+//form con azione php, check js, testi e password
+
+
+//hidden input
