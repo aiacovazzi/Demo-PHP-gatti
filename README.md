@@ -20,6 +20,7 @@ All'interno troverai:
 
 - Il file `script_sql.sql` da eseguire tramite PHPMyAdmin. Contiene lo script per la creazione del database con le due semplici tabelle già discusse e i relativi indici.
 - La cartella `myApp` contenente il codice PHP. Questa cartella va posta sotto la directory `xampp\htdocs\` se usi XAMPP, altrimenti seguendo le specifiche del tuo web server.
+- La cartella `Domande e Risposte PHP`, da usare come test per verificare a livello mnemonico se riuscite a ricordare come impostare le varie funzionalità base. Di solito è presente della documentazione in sede d'esame, ma non potete darla per scontata quindi sempre meglio sforzare un po' la memoria e ricordare quantomeno le basi.
 
 Dopo di che, avvia il web server e usa l'applicazione. Di default, verrà caricata la pagina `index.php` che contiene la schermata di login.
 
